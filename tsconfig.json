@@ -1,0 +1,82 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "allowJs": true,
+    "checkJs": false,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "lib": [
+      "es6",
+      "dom",
+      "es2017"
+    ],
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "paths": {
+      "@utils/*": [
+        "./utils/*"
+      ],
+      "@prefix": [
+        "./utils/assetPrefix"
+      ],
+      "@components/*": [
+        "./components/*"
+      ],
+      "@containers/*": [
+        "./containers/*"
+      ],
+      "@constants": [
+        "./constants"
+      ],
+      "@hooks/*": [
+        "./hooks/*"
+      ],
+      "@states/*": [
+        "./states/*"
+      ],
+      "@slices/*": [
+        "./states/slices/*"
+      ],
+      "@selector/*": [
+        "./states/selector/*"
+      ],
+      "@public/*": [
+        "./public/*"
+      ],
+      "@styles/*": [
+        "./styles/*"
+      ]
+    },
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
